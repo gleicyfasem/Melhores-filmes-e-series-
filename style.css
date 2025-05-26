@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 24px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+#catalogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filme {
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: #000;
+    font-size: 18px;
+    text-align: left;
+}
+
+.avaliacao {
+    font-size: 20px;
+    color: red;
+}

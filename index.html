@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhores Filmes e Séries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 Melhores Filmes e Séries</h1>
+        <p>Escolha entre filmes ou séries e explore os melhores títulos de cada nicho e plataforma!</p>
+    </header>
+    <section id="escolha">
+        <h2>O que deseja explorar?</h2>
+        <button onclick="selecionarTipo('filmes')">Filmes</button>
+        <button onclick="selecionarTipo('series')">Séries</button>
+    </section>
+
+    <section id="plataformas" style="display: none;">
+        <h2>Escolha uma plataforma:</h2>
+        <button onclick="filtrarPlataforma('netflix')">Netflix</button>
+        <button onclick="filtrarPlataforma('prime')">Prime Video</button>
+        <button onclick="filtrarPlataforma('hbo')">HBO Max</button>
+        <button onclick="filtrarPlataforma('disney')">Disney+</button>
+    </section>
+    <section id="nichos" style="display: none;">
+        <h2>Escolha um nicho:</h2>
+        <button onclick="filtrarCategoria('suspense')">Suspense e Mistério</button>
+        <button onclick="filtrarCategoria('ficcao')">Ficção Científica e Fantasia</button>
+        <button onclick="filtrarCategoria('drama')">Drama e Romance</button>
+        <button onclick="filtrarCategoria('acao')">Ação e Aventura</button>
+        <button onclick="filtrarCategoria('documentario')">Documentários e Biografias</button>
+    </section>
+    <section id="catalogo">
+<div class="filme" data-categoria="suspense" data-plataforma="netflix">
+    <h3>Seven: Os Sete Crimes Capitais (1995)</h3>
+    <p>Dois detetives investigam uma série de assassinatos baseados nos sete pecados capitais.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+<div class="filme" data-categoria="suspense" data-plataforma="netflix">
+    <h3>O Poço (2019)</h3>
+    <p>Em uma prisão vertical, os presos lutam por comida em um sistema cruel e desigual.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="netflix">
+    <h3>Bird Box (2018)</h3>
+    <p>Uma mãe e seus filhos tentam sobreviver em um mundo onde criaturas misteriosas causam suicídios em massa.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="netflix">
+    <h3>Fragmentado (2016)</h3>
+    <p>Um homem com múltiplas personalidades sequestra três jovens, revelando um lado aterrorizante.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="netflix">
+    <h3>O Mundo Depois de Nós (2024)</h3>
+    <p>Casal enfrenta um apagão global e descobre segredos sombrios sobre a sociedade.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="netflix">
+    <h3>Telefone Preto (2022)</h3>
+    <p>Garoto sequestrado recebe ligações misteriosas de vítimas anteriores através de um telefone desconectado.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="netflix">
+    <h3>O Assassino (2023)</h3>
+    <p>Filme noir sobre um matador de aluguel lidando com traições e conspirações.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="netflix">
+    <h3>Fuja! (2020)</h3>
+    <p>Jovem descobre que sua mãe esconde um segredo aterrorizante que pode mudar sua vida.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="netflix">
+    <h3>Joias Brutas (2019)</h3>
+    <p>Suspense intenso sobre um joalheiro viciado em apostas que se envolve em um esquema perigoso.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="netflix">
+    <h3>Desaparecidos na Noite (2025)</h3>
+    <p>Pais enfrentam um sequestro aterrorizante em 36 horas de pura tensão.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+
+</div>
+<div class="filme" data-categoria="ficcao" data-plataforma="netflix">
+    <h3>A Origem (2010)</h3>
+    <p>Dom Cobb invade sonhos para manipular a mente das pessoas, mas enfrenta desafios inesperados.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="ficcao" data-plataforma="netflix">
+    <h3>Interestelar (2014)</h3>
+    <p>Exploração espacial em busca de um novo lar para a humanidade, com reviravoltas emocionantes.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="ficcao" data-plataforma="netflix">
+    <h3>Blade Runner 2049 (2017)</h3>
+    <p>Continuação do clássico, explorando a identidade dos replicantes e o futuro da humanidade.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="ficcao" data-plataforma="netflix">
+    <h3>Ex_Machina: Instinto Artificial (2015)</h3>
+    <p>Programador testa a inteligência artificial de uma androide enigmática e sedutora.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="ficcao" data-plataforma="netflix">
+    <h3>Onde Está Segunda? (2017)</h3>
+    <p>Em um futuro onde só filhos únicos são permitidos, seis irmãs tentam se esconder do governo.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="ficcao" data-plataforma="netflix">
+    <h3>O Preço do Amanhã (2011)</h3>
+    <p>Em um mundo onde o tempo é a moeda, um homem luta para sobreviver e mudar o sistema.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="ficcao" data-plataforma="netflix">
+    <h3>Guerra Mundial Z (2013)</h3>
+    <p>Ex-funcionário da ONU viaja pelo mundo tentando impedir uma pandemia zumbi.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="ficcao" data-plataforma="netflix">
+    <h3>Lucy (2014)</h3>
+    <p>Mulher desenvolve habilidades sobre-humanas após ser exposta a uma droga experimental.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="ficcao" data-plataforma="netflix">
+    <h3>Durante a Tormenta (2018)</h3>
+    <p>Uma tempestade abre uma fenda no espaço-tempo, mudando o destino de uma mãe e sua filha.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="ficcao" data-plataforma="netflix">
+    <h3>Sem Limites (2011)</h3>
+    <p>Escritor descobre uma droga que aumenta sua inteligência, mas enfrenta consequências perigosas.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+<div class="filme" data-categoria="drama" data-plataforma="netflix">
+    <h3>O Lado Bom da Vida (2012)</h3>
+    <p>Após sair de uma instituição psiquiátrica, um homem tenta reconstruir sua vida e encontra um amor inesperado.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="drama" data-plataforma="netflix">
+    <h3>Para Sempre Alice (2014)</h3>
+    <p>Professora renomada enfrenta o diagnóstico precoce de Alzheimer e luta para manter sua identidade.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="drama" data-plataforma="netflix">
+    <h3>O Melhor de Mim (2014)</h3>
+    <p>Casal se reencontra após anos separados e revive um amor intenso do passado.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="drama" data-plataforma="netflix">
+    <h3>Amor e Monstros (2020)</h3>
+    <p>Jovem atravessa um mundo pós-apocalíptico para reencontrar seu grande amor.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="drama" data-plataforma="netflix">
+    <h3>A Barraca do Beijo (2018)</h3>
+    <p>Adolescente se apaixona pelo irmão de seu melhor amigo, enfrentando desafios românticos.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="drama" data-plataforma="netflix">
+    <h3>Para Todos os Garotos que Já Amei (2018)</h3>
+    <p>Cartas de amor secretas de uma jovem são enviadas, mudando sua vida amorosa completamente.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="drama" data-plataforma="netflix">
+    <h3>Continência ao Amor (2022)</h3>
+    <p>Cantora e militar forjam casamento e enfrentam desafios inesperados.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="drama" data-plataforma="netflix">
+    <h3>Amor à Primeira Vista (2023)</h3>
+    <p>Dois desconhecidos se apaixonam em um voo e lutam contra o tempo para se reencontrar.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="drama" data-plataforma="netflix">
+    <h3>Garota do Século 20 (2023)</h3>
+    <p>Jovem coreana descobre o amor e a amizade em uma história emocionante e nostálgica.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="drama" data-plataforma="netflix">
+    <h3>Felicidade para Principiantes (2023)</h3>
+    <p>Mulher embarca em uma jornada de autodescoberta e encontra um amor inesperado.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+<div class="filme" data-categoria="acao" data-plataforma="netflix">
+    <h3>Onde Está Segunda? (2017)</h3>
+    <p>Em um futuro distópico, sete irmãs idênticas lutam para sobreviver em um mundo onde apenas filhos únicos são permitidos.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="acao" data-plataforma="netflix">
+    <h3>Círculo de Fogo (2013)</h3>
+    <p>Humanidade constrói robôs gigantes para enfrentar monstros colossais que emergem do oceano.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="acao" data-plataforma="netflix">
+    <h3>Polar (2019)</h3>
+    <p>Assassino de aluguel aposentado é forçado a voltar à ação quando se torna alvo de sua antiga organização.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="acao" data-plataforma="netflix">
+    <h3>Close (2019)</h3>
+    <p>Especialista em segurança precisa proteger uma jovem herdeira de um grupo de criminosos perigosos.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="acao" data-plataforma="netflix">
+    <h3>Star Wars: O Despertar da Força (2015)</h3>
+    <p>Nova ameaça surge na galáxia, e um grupo de heróis precisa encontrar Luke Skywalker para restaurar a esperança.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="acao" data-plataforma="netflix">
+    <h3>Bad Boys Para Sempre (2020)</h3>
+    <p>Dois policiais veteranos enfrentam um cartel perigoso enquanto lidam com mudanças em suas vidas.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="acao" data-plataforma="netflix">
+    <h3>Resgate (2020)</h3>
+    <p>Mercenário embarca em uma missão suicida para salvar o filho de um criminoso internacional.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="acao" data-plataforma="netflix">
+    <h3>O Protetor 2 (2018)</h3>
+    <p>Ex-agente secreto busca vingança após o assassinato de uma amiga próxima.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="acao" data-plataforma="netflix">
+    <h3>O Agente da U.N.C.L.E. (2015)</h3>
+    <p>Dois espiões rivais precisam trabalhar juntos para impedir uma organização criminosa global.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="acao" data-plataforma="netflix">
+    <h3>O Último Caçador de Bruxas (2015)</h3>
+    <p>Guerreiro imortal luta contra forças sobrenaturais que ameaçam a humanidade.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+<div class="filme" data-categoria="documentario" data-plataforma="netflix">
+    <h3>O Dilema das Redes (2020)</h3>
+    <p>Especialistas em tecnologia do Vale do Silício alertam sobre o impacto das redes sociais na democracia e na humanidade.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="documentario" data-plataforma="netflix">
+    <h3>Professor Polvo (2020)</h3>
+    <p>Um cineasta desenvolve uma amizade improvável com um polvo e descobre os mistérios do mundo marinho.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="documentario" data-plataforma="netflix">
+    <h3>Democracia em Vertigem (2019)</h3>
+    <p>Documentário sobre o processo de impeachment da ex-presidente do Brasil, Dilma Rousseff, e a polarização política no país.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="documentario" data-plataforma="netflix">
+    <h3>Senna (2010)</h3>
+    <p>Documentário emocionante sobre a vida e carreira do lendário piloto de Fórmula 1 Ayrton Senna.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="documentario" data-plataforma="netflix">
+    <h3>What Happened, Miss Simone? (2015)</h3>
+    <p>História da icônica cantora Nina Simone, sua música e sua luta pelos direitos civis.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="documentario" data-plataforma="netflix">
+    <h3>Grandes Momentos da Segunda Guerra em Cores (2019)</h3>
+    <p>Exploração de momentos históricos da Segunda Guerra Mundial com imagens restauradas e coloridas.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="documentario" data-plataforma="netflix">
+    <h3>Milada (2018)</h3>
+    <p>Biografia de Milada Horáková, ativista dos direitos humanos que lutou contra ocupações nazistas e soviéticas.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="documentario" data-plataforma="netflix">
+    <h3>Jackie (2016)</h3>
+    <p>Filme biográfico sobre Jacqueline Kennedy nos dias que sucederam o assassinato de John F. Kennedy.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="documentario" data-plataforma="netflix">
+    <h3>Raça (2016)</h3>
+    <p>História de Jesse Owens, atleta negro que desafiou o racismo ao vencer quatro medalhas de ouro nas Olimpíadas de Berlim.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="documentario" data-plataforma="netflix">
+    <h3>O Golpista do Tinder (2022)</h3>
+    <p>História real de um golpista que enganava mulheres na internet fingindo ser um magnata dos diamantes.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+</div>
+
+        <div class="filme" data-categoria="ficcao" data-plataforma="prime">
+            <h3>O Retorno do Imperador (2025)</h3>
+            <p>Reino mágico enfrenta um tirano de outro mundo.</p>
+            <div class="avaliacao">★★★★★</div>
+        </div>
+        <div class="filme" data-categoria="suspense" data-plataforma="prime">
+    <h3>Garota Exemplar (2014)</h3>
+    <p>Nick se torna o principal suspeito do desaparecimento de sua esposa, levando a uma investigação cheia de reviravoltas.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="prime">
+    <h3>Águas Profundas (2022)</h3>
+    <p>Casal envolvido em jogos psicológicos vê seus problemas aumentarem quando amantes começam a desaparecer misteriosamente.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="prime">
+    <h3>O Homem Invisível (2020)</h3>
+    <p>Mulher foge de um relacionamento abusivo, mas começa a ser perseguida por uma presença invisível e aterrorizante.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="prime">
+    <h3>O Telefone Preto (2022)</h3>
+    <p>Garoto sequestrado descobre um telefone desconectado que permite ouvir as vozes das vítimas anteriores do sequestrador.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="prime">
+    <h3>O Sacrifício do Cervo Sagrado (2017)</h3>
+    <p>Cirurgião vê sua família ser afetada por uma doença misteriosa ligada a um segredo terrível de seu passado.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="prime">
+    <h3>Antes de Dormir (2014)</h3>
+    <p>Mulher perde a memória diariamente e grava vídeos para tentar lembrar-se de sua vida e descobrir a verdade sobre seu passado.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="prime">
+    <h3>Obsessão (2018)</h3>
+    <p>Jovem encontra uma bolsa perdida e acaba sendo perseguida pela dona obsessiva, que esconde segredos sombrios.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="prime">
+    <h3>Todos Já Sabem (2018)</h3>
+    <p>Mulher retorna à Espanha para um casamento e sua filha desaparece misteriosamente durante a festa.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="prime">
+    <h3>Nós (2019)</h3>
+    <p>Família enfrenta versões idênticas e vingativas de si mesmos em uma trama cheia de mistério e terror psicológico.</p>
+    <div class="avaliacao">★★★★★</div>
+</div>
+
+<div class="filme" data-categoria="suspense" data-plataforma="prime">
+    <h3>Mãe! (2017)</h3>
+    <p>Série de eventos perturbadores ocorre após a chegada de visitantes inesperados na casa de um casal.</p>
+    <div class="avaliacao">★★★★☆</div>
+</div>
+
+
+        <div class="filme" data-categoria="drama" data-plataforma="hbo">
+            <h3>Cidade Tóxica (2025)</h3>
+            <p>Drama baseado em eventos reais sobre mães lutando contra contaminação ambiental.</p>
+            <div class="avaliacao">★★★★☆</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+<button onclick="voltarInicio()">Voltar à Tela Inicial</button>
+<button onclick="voltarSessao('escolha')">Voltar à Escolha</button>
+</html>
